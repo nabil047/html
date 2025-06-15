@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Top10Amazon – Le migliori offerte Amazon 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scopri i 10 prodotti Amazon più venduti in Europa nelle categorie Smart Home, Tecnologia, Benessere e Casa.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Top10Amazon Logo" class="logo">
+    <h1>Top10Amazon</h1>
+    <p>Le migliori offerte Amazon selezionate per te.</p>
+  </header>
+
+  <section class="products">
+
+    <!-- 1) Echo Show 15 -->
+    <div class="card">
+      <img loading="lazy" src="https://m.media-amazon.com/images/I/71rOap...jpg" alt="Echo Show 15">
+      <h2>Echo Show 15 – Smart display 15″</h2>
+      <p>Display Full‑HD da 15,6″, hub Zigbee integrato, audio potente.</p>
+      <a href="https://www.amazon.it/dp/B0C7XHY6YS?tag=offertetop107-21" target="_blank">Scopri l’offerta</a>
+    </div>
+
+    <!-- 2) Echo Show 5 -->
+    <div class="card">
+      <img loading="lazy" src="https://m.media-amazon.com/images/I/61nlc...jpg" alt="Echo Show 5">
+      <h2>Echo Show 5 – Display compatto</h2>
+      <p>Display da 5″, videocamera, timer e sveglia smart.</p>
+      <a href="https://www.amazon.it/dp/B079TGLHPS?tag=offertetop107-21" target="_blank">Scopri l’offerta</a>
+    </div>
+
+    <!-- 3) Xiaomi Smart Home Hub 2 -->
+    <div class="card">
+      <img loading="lazy" src="https://i01.appmifile.com/webfile/globalimg/home/01Mi.jpg" alt="Xiaomi Smart Home Hub 2">
+      <h2>Xiaomi Smart Home Hub 2</h2>
+      <p>Hub Zigbee + Wi‑Fi, compatibile Mi Home, controlla fino a 100 dispositivi.</p>
+      <a href="https://www.amazon.it/dp/B0BW66JH4Q?tag=offertetop107-21" target="_blank">Scopri l’offerta</a>
+    </div>
+
+    <!-- 4–10) Aggiungi qui gli altri 7 prodotti con immagini e link similmente -->
+
+  </section>
+
+  <section class="newsletter">
+    <h2>Iscriviti alla nostra newsletter</h2>
+    <p>Ricevi le migliori offerte direttamente nella tua email.</p>
+    <form action="https://formspree.io/f/moqbdqre" method="POST">
+      <input type="email" name="email" placeholder="La tua email" required>
+      <button type="submit">Iscriviti</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Top10Amazon – In qualità di affiliato Amazon, riceviamo una commissione sugli acquisti qualificati.</p>
+  </footer>
+</body>
+</html>
