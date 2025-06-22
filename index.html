@@ -1,49 +1,229 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Top10Amazon – Best Seller Amazon.it</title>
-  <meta name="description" content="I 10 bestseller Amazon selezionati per te. Link affiliati per guadagnare.">
-  <link rel="icon" href="favicon.ico">
-  <style>
-    body { font-family: sans-serif; margin:0; padding:0; }
-    header, footer { background:#004080;color:#fff;text-align:center;padding:1em; }
-    .grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1em;padding:1em; }
-    .card { border:1px solid #ccc;border-radius:8px;overflow:hidden;display:flex;flex-direction:column; }
-    .card img { width:100%;height:auto; }
-    .card-body { padding:0.5em;flex-grow:1;display:flex;flex-direction:column; }
-    .btn { background:#ff9900;color:#000;text-decoration:none;padding:0.5em;text-align:center;border-radius:4px;margin-top:auto; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri i 10 prodotti Amazon più venduti. Design moderno, immagini visibili e link affiliati per guadagnare subito.">
+    <title>Top 10 Bestseller Amazon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/891/891419.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff9900, #ff6600);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+            flex: 1;
+        }
+        .product-info h3 {
+            font-size: 1.1em;
+            margin: 0 0 8px;
+        }
+        .product-info p {
+            font-size: 0.9em;
+            margin-bottom: 12px;
+        }
+        .product-info a {
+            text-decoration: none;
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .product-info a:hover {
+            background-color: #e68a00;
+        }
+        .newsletter {
+            background: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            max-width: 80%;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
+
 <header>
-  <h1>Top10Amazon – I Best Seller Amazon</h1>
+    <h1>Top 10 Bestseller Amazon</h1>
+    <p>Scopri i prodotti più amati e acquistati del momento</p>
 </header>
 
-<section class="grid">
-  <!-- Esempio prodotto -->
-  <div class="card">
-    <img src="https://m.media-amazon.com/images/I/51XYZ.jpg" alt="Sacchetti sottovuoto grandi">
-    <div class="card-body">
-      <h2>Sacchetti sottovuoto (grandi, 5 pezzi)</h2>
-      <p>Risparmio spazio fino all’80% con doppia cerniera e pompa.</p>
-      <a class="btn" href="https://www.amazon.it/dp/B07RP7WHHY?tag=offertetop057-21" target="_blank">Acquista ora</a>
+<section class="product-grid">
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81I3w4J6yjL._AC_SL1500_.jpg" alt="Echo Dot (5ª gen)" loading="lazy">
+        <div class="product-info">
+            <h3>Echo Dot (5ª gen)</h3>
+            <p>Altoparlante smart con Alexa</p>
+            <a href="https://www.amazon.it/dp/B09B8V1LZ3?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
     </div>
-  </div>
-  <!-- Continua con gli altri 9 in ordine -->
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51Da2Z+FTyL._AC_SL1000_.jpg" alt="Fire TV Stick 4K" loading="lazy">
+        <div class="product-info">
+            <h3>Fire TV Stick 4K</h3>
+            <p>Streaming stick con telecomando vocale Alexa</p>
+            <a href="https://www.amazon.it/dp/B09BDBGKWR?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61Iz2yy2CKL._AC_SL1000_.jpg" alt="Kindle Paperwhite" loading="lazy">
+        <div class="product-info">
+            <h3>Kindle Paperwhite</h3>
+            <p>Lettore eBook con luce regolabile</p>
+            <a href="https://www.amazon.it/dp/B08N36XNTT?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg" alt="Sony WH-1000XM4" loading="lazy">
+        <div class="product-info">
+            <h3>Sony WH-1000XM4</h3>
+            <p>Cuffie con cancellazione del rumore</p>
+            <a href="https://www.amazon.it/dp/B0863TXGM3?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71D8NtpYl3L._AC_SL1500_.jpg" alt="Roomba 692" loading="lazy">
+        <div class="product-info">
+            <h3>Roomba 692</h3>
+            <p>Robot aspirapolvere Wi-Fi</p>
+            <a href="https://www.amazon.it/dp/B0854XVNLK?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71TWQ9D3WKL._AC_SL1500_.jpg" alt="Samsung Galaxy Tab A8" loading="lazy">
+        <div class="product-info">
+            <h3>Samsung Galaxy Tab A8</h3>
+            <p>Tablet da 10.5'' Wi-Fi</p>
+            <a href="https://www.amazon.it/dp/B09N41RC6L?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71LF7lYvGFL._AC_SL1500_.jpg" alt="Philips OneBlade" loading="lazy">
+        <div class="product-info">
+            <h3>Philips OneBlade</h3>
+            <p>Rasoio elettrico 3-in-1</p>
+            <a href="https://www.amazon.it/dp/B01D328DHU?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61PVjZDFEIL._AC_SL1500_.jpg" alt="Oral-B Pro 3" loading="lazy">
+        <div class="product-info">
+            <h3>Oral-B Pro 3</h3>
+            <p>Spazzolino elettrico con timer</p>
+            <a href="https://www.amazon.it/dp/B08GY9NYRM?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71gY9-E9ltL._AC_SL1500_.jpg" alt="Apple AirTag" loading="lazy">
+        <div class="product-info">
+            <h3>Apple AirTag</h3>
+            <p>Tracker bluetooth per oggetti</p>
+            <a href="https://www.amazon.it/dp/B0933BVK6T?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61G9aHzF3aL._AC_SL1500_.jpg" alt="Logitech MX Master 3S" loading="lazy">
+        <div class="product-info">
+            <h3>Logitech MX Master 3S</h3>
+            <p>Mouse wireless per produttività</p>
+            <a href="https://www.amazon.it/dp/B09HM94VDS?tag=offertetop057-21" target="_blank" class="btn">Acquista ora</a>
+        </div>
+    </div>
+
 </section>
 
-<section style="padding:1em;background:#f0f0f0;text-align:center;">
-  <h2>Iscriviti alla Newsletter</h2>
-  <form action="mailto:tuamail@example.com" method="post" enctype="text/plain">
-    <input type="email" name="email" placeholder="La tua email" required>
-    <button type="submit">Iscriviti</button>
-  </form>
+<section class="newsletter">
+    <h2>Iscriviti alla Newsletter</h2>
+    <p>Ricevi nuove offerte e prodotti top direttamente nella tua email</p>
+    <form action="mailto:tuamail@example.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Inserisci la tua email" required>
+        <button type="submit">Iscriviti</button>
+    </form>
 </section>
 
 <footer>
-  <p>&copy; 2025 Top10Amazon • Affiliate Site</p>
+    <p>© 2025 Top10Amazon. Tutti i diritti riservati.</p>
 </footer>
+
 </body>
 </html>
